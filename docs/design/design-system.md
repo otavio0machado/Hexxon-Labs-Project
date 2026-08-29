@@ -101,7 +101,9 @@ O exemplo Levey-Jennings é apenas visual e não implementa engine ou decisão c
 
 ## Motion
 
-Motion é curta, física e explicativa: 160ms `--ease-out` para hover/entrada de controles e `--ease-spring` apenas onde uma mudança de relação merece ênfase. Usos legítimos: revelar a origem de uma exceção, transição entre estados de um registro e confirmar associação de evidência. Não animar métricas continuamente, não usar parallax e não bloquear leitura. `prefers-reduced-motion` reduz toda animação quase a zero.
+Motion é curta, física e explicativa. O sistema usa `--motion-fast` (140ms), `--motion-standard` (260ms) e `--motion-emphasis` (520ms), com as curvas `--ease-precision`, `--ease-flow` e `--ease-spring-subtle`. Usos legítimos: revelar uma relação, transicionar o foco de um registro e confirmar associação de evidência. Não animar métricas continuamente, não bloquear leitura e não usar parallax como conteúdo. `prefers-reduced-motion` deixa relações e conteúdo estáticos e visíveis.
+
+A camada de marketing é documentada em [Signal Lattice](./hexxon-visual-language.md) e [Motion system](./marketing-motion-system.md). Ela usa SVG/CSS pequenos, sem WebGL e sem depender de uma biblioteca de motion.
 
 ## Acessibilidade
 
@@ -122,4 +124,3 @@ Também há previews de integração em `@hexxon/marketing` e `@hexxon/platform`
 ## Limites desta sprint
 
 Não há dados reais, autenticação, APIs, regras de domínio, CQ decisório, storage, gráficos de produção ou Storybook empacotado. `apps/design-lab` é o ambiente equivalente exigido para inspeção isolada; Storybook pode ser introduzido quando os componentes adquirirem variantes/documentação automatizada suficientes para justificar sua manutenção.
-
