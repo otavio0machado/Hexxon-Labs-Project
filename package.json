@@ -4,7 +4,9 @@
   "packageManager": "pnpm@11.19.0",
   "scripts": {
     "dev": "turbo dev",
+    "dev:api": "mvn -f apps/api/pom.xml spring-boot:run",
     "build": "turbo build",
+    "build:api": "mvn -f apps/api/pom.xml test package",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "turbo typecheck",
     "test": "turbo test"

@@ -15,3 +15,4 @@ hexxon:
   marketing:
     admin-token: ${MARKETING_ADMIN_TOKEN:}
     allowed-origins: ${MARKETING_ALLOWED_ORIGINS:http://localhost:3000}
+    commercial-notification-webhook-url: ${COMMERCIAL_NOTIFICATION_WEBHOOK_URL:}
