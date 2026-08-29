@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const links = [
-  ["Plataforma", "#plataforma"], ["Produtos", "#produtos"], ["Inteligência", "#intelligence"], ["Segurança", "#seguranca"], ["Contato", "#contato"]
+  ["Plataforma", "#plataforma"], ["Produtos", "#produtos"], ["Quality Graph", "#quality-graph"], ["Segurança", "#seguranca"], ["Contato", "#contato"]
 ] as const;
 
 export default function MobileNav() {

@@ -13,10 +13,10 @@
 
 ## Regras
 
-Motion explica conexões: o pulso percorre paths do hero e do Quality Graph, e a seleção de um nó ganha contraste. Ela não é usada em métricas, fundos contínuos, navegação forçada ou para esconder conteúdo. Não há dependência de WebGL ou biblioteca de animação.
+Motion explica conexões: o Core monta sua geometria, o pulso percorre os paths, tabs interpolam o indicador, previews fazem crossfade curto e o Quality Graph desenha a sequência conforme o scroll nativo. Ela não é usada em métricas, em fade-up genérico ou para esconder conteúdo. Não há dependência de WebGL ou biblioteca externa de animação.
 
 Em `prefers-reduced-motion`, as transições são removidas, os nós permanecem visíveis e paths deixam de pulsar. O layout e o conteúdo são os mesmos.
 
 ## Performance
 
-As animações atuam somente em `transform`, `opacity` e `stroke-dashoffset` de SVGs pequenos. O Quality Graph permanece carregado sob demanda. Nenhuma imagem pesada, canvas ou fonte adicional foi introduzida.
+As animações atuam em `transform`, `opacity`, `stroke-dashoffset` e um único estado React derivado do scroll via `requestAnimationFrame`. O Quality Graph permanece carregado sob demanda. Nenhuma imagem pesada, canvas, fonte remota ou dependência de motion foi introduzida.

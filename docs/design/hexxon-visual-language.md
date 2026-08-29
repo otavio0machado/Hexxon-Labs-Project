@@ -11,9 +11,11 @@ Signal Lattice é a linguagem visual do marketing da Hexxon: um sistema de célu
 - **Lattice plane** é uma grade angular de baixo contraste. Ela dá profundidade à instrumentação, sem competir com conteúdo.
 - **Signal green** marca foco, estado ligado ou próximo passo. Lilac define estrutura e caminhos; nenhuma cor é a única representação de estado.
 
-## Aplicação no marketing
+## Direção Digital Laboratory Infrastructure
 
-O hero usa um campo pseudo-3D de seis domínios e núcleo Hexxon. O ecossistema de produtos usa uma topologia central de Hexxon Cloud com destinos equivalentes e links reais. O Quality Graph usa disposição espacial no desktop e uma cadeia semântica no mobile. A área de contato traduz a sequência Interesse → Laboratório → Contato → Hexxon em um guia lateral puramente visual, sem alterar o formulário comercial.
+A camada de marketing combina apresentação de produto em grande escala, instrumentação científica e software enterprise. A sans moderna é dominante; serif aparece somente como accent. O background percorre purple-black, aubergine, graphite e moss-dark por campos radiais contínuos, sem blocos gráficos agressivos.
+
+O hero usa um Hexxon Core pseudo-3D de seis domínios sem card envolvente. Hexxon Cloud aparece como uma interface operacional ampla. O Product System troca seis previews plausíveis — Enviro, Trace, QC, Asset, Quality e Intelligence — sem simular clientes ou resultados comerciais. O Quality Graph é uma ferramenta sticky no desktop, controlada pelo scroll, e uma linha do tempo linear no mobile. A área de contato preserva o formulário comercial e recebe o sinal final da narrativa.
 
 ## Limites
 
@@ -21,4 +23,4 @@ Não usar Signal Lattice como ornamento repetido, diagrama científico implausí
 
 ## Responsividade e acessibilidade
 
-Em telas estreitas, o campo de sinal reduz densidade e os grafos espaciais passam para sequências lineares operáveis por teclado. `prefers-reduced-motion` preserva linhas e nós estáticos; nenhuma informação depende de animação. Foco de teclado segue os links e botões sem depender da cor.
+Em telas estreitas, o Core reduz densidade, o Product System passa a tabs horizontais e o Quality Graph vira uma sequência vertical operável por teclado. `prefers-reduced-motion` preserva linhas e nós estáticos; nenhuma informação depende de animação. Foco de teclado segue links, tabs e eventos sem depender da cor.

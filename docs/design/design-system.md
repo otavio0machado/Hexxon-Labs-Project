@@ -53,8 +53,8 @@ As cores de foreground principais foram verificadas contra Ink: Off white 17.92:
 
 ### Tipografia, espaço e forma
 
-- Interface: system sans (`Arial`, Helvetica como fallback) por legibilidade e disponibilidade. A Sprint de produto pode introduzir uma família licenciada após teste de performance e licença.
-- Display editorial: Georgia como fallback controlado, usada somente em títulos/valores de alta hierarquia; não em tabelas ou entrada de dados.
+- Interface e display: stack neo-grotesk/humanist `Avenir Next`, `SF Pro`, `Helvetica Neue` e Arial como fallbacks locais. A mesma família sustenta marketing e UI, com pesos e tracking diferentes, sem download de fonte no caminho crítico.
+- Accent editorial: Georgia permanece restrita a uma frase especial, nunca como tipografia dominante de headings ou interface.
 - Monospace: SF Mono/Consolas para IDs, atalhos e metadados técnicos.
 - Espaçamento: escala 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80 e 96px. Não usar valores ad hoc fora dessa escala sem novo token.
 - Radius: 6, 10, 16 e 24px; pills exclusivamente para controles compactos/status.
@@ -62,7 +62,7 @@ As cores de foreground principais foram verificadas contra Ink: Off white 17.92:
 
 ## Layout e responsividade
 
-- Grid de referência: 12 colunas desktop, 8 tablet, 4 mobile; container máximo de 1240px e gutter de 24px (16px em mobile).
+- Grid de referência: 12 colunas desktop, 8 tablet, 4 mobile; marketing usa container máximo de 1320px e produto autenticado mantém 1240px. Gutter de 32px no desktop, 20px no tablet e 16px no mobile.
 - Dashboard: quatro status cards no desktop, dois no tablet e uma coluna no mobile. Tabelas preservam semântica e rolam horizontalmente quando necessário; não esmagam colunas críticas.
 - Sidebar desaparece abaixo de 640px; a implementação de navegação móvel será um componente próprio quando o shell autenticado existir.
 - A seleção de Organization/Site deve permanecer visível no shell em qualquer breakpoint. Nenhum filtro visual muda o tenant efetivo.
@@ -101,7 +101,7 @@ O exemplo Levey-Jennings é apenas visual e não implementa engine ou decisão c
 
 ## Motion
 
-Motion é curta, física e explicativa. O sistema usa `--motion-fast` (140ms), `--motion-standard` (260ms) e `--motion-emphasis` (520ms), com as curvas `--ease-precision`, `--ease-flow` e `--ease-spring-subtle`. Usos legítimos: revelar uma relação, transicionar o foco de um registro e confirmar associação de evidência. Não animar métricas continuamente, não bloquear leitura e não usar parallax como conteúdo. `prefers-reduced-motion` deixa relações e conteúdo estáticos e visíveis.
+Motion é física e explicativa. O sistema usa `--motion-fast` (140ms), `--motion-standard` (260ms) e `--motion-emphasis` (520ms), com as curvas `--ease-precision`, `--ease-flow` e `--ease-spring-subtle`. O hero monta a geometria, tabs interpolam foco, o Quality Graph progride com o scroll nativo e o CTA recebe o sinal final. Não animar métricas continuamente nem bloquear leitura. `prefers-reduced-motion` deixa relações e conteúdo estáticos e visíveis.
 
 A camada de marketing é documentada em [Signal Lattice](./hexxon-visual-language.md) e [Motion system](./marketing-motion-system.md). Ela usa SVG/CSS pequenos, sem WebGL e sem depender de uma biblioteca de motion.
 
