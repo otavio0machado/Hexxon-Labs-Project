@@ -1,0 +1,17 @@
+spring:
+  application.name: hexxon-api
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/hexxon}
+    username: ${DATABASE_USERNAME:hexxon}
+    password: ${DATABASE_PASSWORD:hexxon}
+  jpa:
+    open-in-view: false
+    hibernate.ddl-auto: validate
+  flyway:
+    enabled: true
+server:
+  port: ${PORT:8080}
+hexxon:
+  marketing:
+    admin-token: ${MARKETING_ADMIN_TOKEN:}
+    allowed-origins: ${MARKETING_ALLOWED_ORIGINS:http://localhost:3000}
